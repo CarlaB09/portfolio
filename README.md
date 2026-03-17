@@ -37,4 +37,8 @@ A modern, responsive portfolio website showcasing my skills and projects as a so
 <br>
 
 #### Image:
-![CinemaPage_Image](./img/desktop_image.PNG)
+![Desktop_img](./img/desktop_img.PNG)
+
+
+
+
