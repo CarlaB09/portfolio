@@ -28,9 +28,7 @@ A modern, responsive portfolio website showcasing my skills and projects as a so
 
 * JavaScript (ES6+)
 
-* Bootstrap 4.1
-
-* Font Awesome 5
+* Font Awesome
 
 *Formspree (form handling)
 
