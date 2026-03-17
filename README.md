@@ -1,7 +1,7 @@
 # Carla Vasconcelos - Portfolio Website
 A modern, responsive portfolio website showcasing my skills and projects as a software developer. Built with HTML, CSS, and JavaScript, featuring a clean design with interactive elements.
 
-[Live page link](xxx)
+[Live page link](https://carlab09.github.io/portfolio/)
 
 #### 🌟 Features
 * Responsive Design: Fully responsive layout that adapts to all device sizes
@@ -37,7 +37,7 @@ A modern, responsive portfolio website showcasing my skills and projects as a so
 <br>
 
 #### Image:
-![Desktop_img](./img/desktop_img.PNG)
+![Desktop_img](/src/img/desktop_img.PNG)
 
 
 
