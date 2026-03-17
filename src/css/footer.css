@@ -1,0 +1,22 @@
+
+/* Styling for footer element */
+
+.footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #29031b;
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+
+.fa-linkedin {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 242, 242);
+    font-size: 50px;
+    bottom: 50px;
+}

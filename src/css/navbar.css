@@ -1,0 +1,176 @@
+/***** NAVBAR STYLING *****/
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    /*capitalizing all h1 headings */
+    font-family: "Trebuchet MS", Optima;
+    /* Sets the font family of all h1 headings */
+    text-align: center;
+    /* Centering all h1 elements */
+    margin-top: 3%;
+    /* Adds a small margin above h1 elements */
+    color: #1a1a1a;
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+    filter: grayscale(5%);
+    /* Adds a slightly gray filter to the h1 headings when hovered over */
+    transform: scale(1.1);
+    /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transition: transform 1s;
+    /* This causes the transformation to last 1 second */
+}
+
+/* Styling for Portfolio Title Text */
+.white-text {
+    color: #fff;
+    /* This is used to change the color of the Portfolio Title text */
+    padding-top: 10vh;
+    /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/* Paragraph elements */
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify;
+    /* This justifies the text within paragraph elements */
+    letter-spacing: .1vw;
+    /* This expands the text slightly */
+    font-size: 2.5vw;
+    /* Relative font sizing equal to 2.5% of the viewport width */
+    padding-left: 1vw;
+    /* Relative padding equal to 1% of the viewport width */
+    padding-right: 1vw;
+    /* Relative padding equal to 1% of the viewport width */
+}
+
+/* Paragraph element hover effect */
+p:hover {
+    transition: transform 1s;
+    /* This makes the transform effect last 1 second */
+    transform: scale(1.01);
+    /* This makes the paragraphs increase slightly in size when hovered over */
+}
+
+
+.Navbar {
+    overflow: hidden;
+    /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+    background-color: black;
+    /* This colors the navbar black */
+    position: fixed;
+    /* This keeps the navbar at the top of the screen as we scroll */
+    top: 0;
+    /* This ensures no space is displayed above the navbar */
+    width: 100%;
+    /* This makes the navbar span the entire width of the page */
+    z-index: 1;
+    /* This ensures other elements don't display over the navbar */
+    -webkit-animation: moveNav 5s;
+    /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 5s;
+    /* This applies the moveNav animation for all other browsers */
+}
+
+
+/* moveNav animation effect for moving the nav bar in from the left of the screen */
+@keyframes moveNav {
+    from {
+        left: -100vw;
+    }
+
+    /* The navbar is starting off screen to the left */
+    to {
+        left: 0vw;
+    }
+
+    /* This moves the navbar into place on the screen */
+}
+
+
+/* Navbar links */
+.Navbar a {
+    float: left;
+    /* This specifies that the text floats on the left on the navbar */
+    display: block;
+    /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+    color: rgb(255, 255, 255);
+    /* This is the font color for text on our navbar */
+    padding: 14px 16px;
+    /* This adds padding around our text */
+    text-decoration: none;
+    /* This gets rid of the underlines under the text on our navbar */
+    font-family: Avant Garde, Helvetica;
+    /* This specifies the font family for text on our navbar */
+    font-size: 20px;
+    /* This specifies the font size for text on our navbar */
+    text-align: center;
+    /* This centers the text within its container */
+    position: relative;
+    /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveNavText 5.75s;
+    /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 5.75s;
+    /* Applies the moveNavText animation for 5.75s */
+}
+#contactform{
+    color: #ffffff;
+}
+
+/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
+@keyframes moveNavText {
+    from {
+        top: -100vw;
+    }
+
+    /* This sets the navbar text 100% above the viewport */
+    to {
+        top: 0vw;
+    }
+
+    /* This lowers the navbar text onto the navbar */
+}
+
+
+
+/* Screens 576px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width: 25%;
+        /* This makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: #f4f4f4;
+    /* Defines the background color that will display when you hover over the link */
+    color: black;
+    /* This defines the font color that will display when navbar a elements are hovered over */
+    font-weight: bold;
+    /* This makes the text on the navbar bold when hovered over */
+    text-decoration: none;
+}
+
+#contactform:hover{
+        background-color: #f4f4f4;
+            /* Defines the background color that will display when you hover over the link */
+            color: black;
+            /* This defines the font color that will display when navbar a elements are hovered over */
+            font-weight: bold;
+            /* This makes the text on the navbar bold when hovered over */
+            text-decoration: none;
+            cursor: pointer;
+}
+
+/* Navbar home button */
+.Navbar a.active {
+    /* This targets the a element on the navbar with the "active" class */
+    background-color: darkgray;
+}
+
+/***** END OF NAVBAR STYLING *****/

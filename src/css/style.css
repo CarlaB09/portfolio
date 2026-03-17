@@ -1,0 +1,69 @@
+/***** GENERAL STYLING *****/
+/* Body */
+body {
+    height: 100vh;
+    margin: 0%;
+}
+
+/* Quotation element*/
+q {
+    font-style: italic;
+   
+}
+
+.center {
+    text-align: center;
+    z-index: 1;
+    margin: 10px 50px;
+    font-size: 1.8rem;
+}
+
+/* Center align elements hover effect - This only affects the quote, github link, and footer */
+.center:hover {
+    transition: transform 2s;
+    /* This makes the transform effect last 2 seconds */
+    transform: scale(1.1);
+    /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+}
+
+/***** VIDEO STYLING *****/
+/* Formatting for background video */
+#tecVideo {
+    position: fixed; /* This fixes the video to the page */
+    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+    bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    z-index: -1; /* This places the video behind the other elements on the page */
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #tecVideo{
+        display: none;
+    }
+}
+
+/* Texts over the video */
+.videoText {
+    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+    color: white; /* Makes the font color white */
+    width: 100%; /* Ensures the video-text container fills the width of the video */
+    padding: 120px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+@keyframes moveVideoText {
+    from {top: -100vw;} /* This sets the position of the video text to above the viewport */
+    to {top: 0vw;} /* This moves the video text to the normal positioning on the viewport */
+}
+/***** END OF VIDEO STYLING *****/
+
+
+
+
+
+
+
