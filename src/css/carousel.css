@@ -145,6 +145,10 @@ body {
     display: none;
 }
 
+.fade img{
+    width: 100%;
+}
+
 img {
     vertical-align: middle;
 }
@@ -186,6 +190,10 @@ img {
     display: inline-block;
     transition: background-color 0.6s ease;
     text-align: center; 
+}
+
+.dotsCenter{
+    text-align: center;
 }
 
 .active {
